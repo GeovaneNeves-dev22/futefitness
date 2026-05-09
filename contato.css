@@ -1,0 +1,218 @@
+/* ============================================================
+   FUT & FITNESS — contato.css
+   ============================================================ */
+
+/* ── CONTATO PRINCIPAL ── */
+.ct-main {
+  padding: 100px 0;
+  background: var(--black);
+}
+.ct-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Info lateral */
+.ct-info h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 40px;
+}
+.ct-info h2 span { color: var(--accent); }
+
+.ct-item {
+  display: flex;
+  gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: flex-start;
+}
+.ct-icon {
+  font-size: 1.3rem;
+  width: 42px; height: 42px;
+  background: rgba(166,255,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ct-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.ct-val {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--white);
+  line-height: 1.6;
+}
+.ct-link {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.ct-link:hover { color: #8fd900; }
+
+.ct-schedule {
+  margin-top: 28px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.cs-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: var(--dark);
+  border-bottom: 1px solid var(--line);
+}
+.cs-row:last-child { border-bottom: none; }
+.cs-row span:first-child {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.cs-time {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+}
+.cs-row.closed { opacity: 0.4; }
+.cs-row.closed .cs-time {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Formulário */
+.ct-form-wrap {
+  background: var(--charcoal);
+  padding: 48px;
+}
+.ct-form-header { margin-bottom: 36px; }
+.ct-form-header h3 {
+  font-size: 1.8rem;
+  margin: 10px 0 12px;
+}
+.ct-form-header p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.ct-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cf-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.cf-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cf-group label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.cf-group input,
+.cf-group select,
+.cf-group textarea {
+  background: var(--dark);
+  border: 1px solid var(--line);
+  color: var(--white);
+  padding: 14px 16px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+  appearance: none;
+}
+.cf-group input::placeholder,
+.cf-group textarea::placeholder { color: var(--muted); }
+.cf-group input:focus,
+.cf-group select:focus,
+.cf-group textarea:focus { border-color: var(--accent); }
+.cf-group select { cursor: pointer; }
+.cf-group select option { background: var(--dark); }
+
+.cf-note {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ── MAPA ── */
+.ct-map {
+  padding: 80px 0 0;
+  background: var(--charcoal);
+}
+.map-head { margin-bottom: 40px; }
+.map-head h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.map-head h2 span { color: var(--accent); }
+.map-embed {
+  position: relative;
+  width: 100%;
+}
+.map-embed iframe { display: block; filter: invert(0.9) hue-rotate(180deg) contrast(0.85); }
+.map-overlay {
+  position: absolute;
+  top: 24px;
+  left: 72px;
+  z-index: 10;
+}
+.mo-card {
+  background: var(--black);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 240px;
+}
+.mo-card strong {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+.mo-card span {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* ── RESPONSIVO CONTATO ── */
+@media (max-width: 960px) {
+  .ct-main { padding: 60px 0; }
+  .ct-grid { grid-template-columns: 1fr; gap: 48px; }
+  .cf-row { grid-template-columns: 1fr; }
+  .ct-form-wrap { padding: 32px 24px; }
+  .map-overlay { position: static; margin: 0; }
+  .mo-card { max-width: 100%; }
+  .ct-map { padding: 60px 0 0; }
+  .map-head { padding: 0 24px; }
+}
+@media (max-width: 600px) {
+  .map-embed iframe { height: 280px; }
+}

@@ -1,0 +1,252 @@
+/* ============================================================
+   FUT & FITNESS — servicos.css
+   ============================================================ */
+
+/* ── BLOCOS DE SERVIÇO ── */
+.srv-section {
+  padding: 100px 0;
+  background: var(--black);
+}
+.srv-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding: 60px 0;
+}
+.srv-block.reverse { direction: rtl; }
+.srv-block.reverse > * { direction: ltr; }
+
+.srv-media {
+  position: relative;
+  aspect-ratio: 4/5;
+}
+.srv-num-bg {
+  position: absolute;
+  top: -20px;
+  left: -16px;
+  font-family: var(--font-display);
+  font-size: 8rem;
+  color: rgba(166,255,0,0.05);
+  line-height: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+.srv-content { position: relative; }
+.srv-content h2 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  margin: 12px 0 20px;
+}
+.srv-content h2 span { color: var(--accent); }
+.srv-content p {
+  color: rgba(255,255,255,0.55);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+.srv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.srv-tags span {
+  padding: 5px 14px;
+  background: rgba(166,255,0,0.1);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.srv-tags.orange span {
+  background: rgba(255,102,0,0.1);
+  color: var(--orange);
+}
+.srv-points {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.sp-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+}
+.sp-icon { color: var(--accent); flex-shrink: 0; }
+
+.srv-divider {
+  height: 1px;
+  background: var(--line);
+}
+
+/* ── DUPLO (03 e 04) ── */
+.srv-double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  padding: 60px 0;
+}
+.srv-half {
+  background: var(--charcoal);
+  padding: 40px;
+}
+.sh-img { margin-bottom: 32px; }
+.sh-content h2 {
+  font-size: 2rem;
+  margin: 12px 0 16px;
+}
+.sh-content h2 span { color: var(--accent); }
+.sh-content p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.75;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.sh-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sh-list li {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.65);
+  padding-left: 20px;
+  position: relative;
+}
+.sh-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ── PARCERIAS ── */
+.srv-partners {
+  padding: 80px 0;
+  background: var(--charcoal);
+}
+.sp-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.sp-inner h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 12px 0 16px;
+}
+.sp-inner h2 span { color: var(--accent); }
+.sp-inner > div:first-child p {
+  color: rgba(255,255,255,0.55);
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.sp-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.spb {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--dark);
+  padding: 24px 28px;
+  border-left: 3px solid var(--accent);
+}
+.spb-icon {
+  width: 48px; height: 48px;
+  background: var(--accent);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+.spb strong { display: block; font-size: 1rem; margin-bottom: 4px; }
+.spb span { font-size: 0.78rem; color: var(--muted); }
+
+/* ── FAQ ── */
+.faq {
+  padding: 100px 0;
+  background: var(--black);
+}
+.faq-head { margin-bottom: 48px; }
+.faq-head h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 800px;
+}
+.faq-item {
+  border-bottom: 1px solid var(--line);
+  padding: 28px 0;
+}
+.faq-q {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+  color: var(--white);
+  cursor: pointer;
+}
+.faq-a {
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+/* ── CTA SERVIÇOS ── */
+.srv-cta {
+  padding: 80px 0;
+  background: var(--charcoal);
+  border-top: 1px solid var(--line);
+}
+.srvcta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.srvcta-inner h2 {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+}
+.srvcta-inner h2 span { color: var(--accent); }
+.srvcta-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+/* ── RESPONSIVO SERVIÇOS ── */
+@media (max-width: 960px) {
+  .srv-block { grid-template-columns: 1fr; gap: 40px; }
+  .srv-block.reverse { direction: ltr; }
+  .srv-double { grid-template-columns: 1fr; }
+  .sp-inner { grid-template-columns: 1fr; gap: 40px; }
+  .srvcta-inner { flex-direction: column; text-align: center; }
+  .srvcta-btns { justify-content: center; }
+}
+@media (max-width: 600px) {
+  .srv-section { padding: 60px 0; }
+  .srv-block { padding: 40px 0; }
+  .faq { padding: 60px 0; }
+  .srv-cta { padding: 60px 0; }
+  .srv-partners { padding: 60px 0; }
+}

@@ -1,0 +1,248 @@
+/* ============================================================
+   FUT & FITNESS — sobre.css
+   ============================================================ */
+
+/* ── HISTÓRIA ── */
+.historia {
+  padding: 100px 0;
+  background: var(--black);
+}
+.historia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.hist-img {
+  position: relative;
+  aspect-ratio: 3/4;
+}
+.hist-year-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--accent);
+  color: var(--black);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.hist-year-badge span:first-child,
+.hist-year-badge span:last-child {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.hy-year {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  line-height: 1;
+}
+.hist-content h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 12px 0 24px;
+}
+.hist-content h2 span { color: var(--accent); }
+.hist-content p {
+  color: rgba(255,255,255,0.55);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* ── VALORES ── */
+.valores {
+  padding: 100px 0;
+  background: var(--charcoal);
+}
+.valores-head {
+  margin-bottom: 48px;
+}
+.valores-head h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+.valores-head h2 span { color: var(--accent); }
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+.valor-card {
+  background: var(--dark);
+  padding: 40px 32px;
+  border-top: 3px solid transparent;
+  transition: border-color 0.3s, background 0.3s, transform 0.3s;
+}
+.valor-card:hover {
+  background: var(--surface);
+  border-top-color: var(--accent);
+  transform: translateY(-4px);
+}
+.vc-icon { font-size: 2.4rem; margin-bottom: 20px; }
+.valor-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+.valor-card p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── DIFERENCIAIS ── */
+.diferenciais {
+  padding: 100px 0;
+  background: var(--black);
+}
+.dif-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.dif-text h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 12px 0 36px;
+}
+.dif-text h2 span { color: var(--orange); }
+.dif-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.dif-list li {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.dif-list li:last-child { border-bottom: none; padding-bottom: 0; }
+.dil-icon {
+  color: var(--accent);
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.dif-list strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.dif-list p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+.dif-img { position: relative; }
+.dif-stat {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: var(--orange);
+  color: var(--white);
+  padding: 20px 28px;
+}
+.ds-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  line-height: 1;
+}
+.ds-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* ── EQUIPE ── */
+.equipe {
+  padding: 100px 0;
+  background: var(--charcoal);
+}
+.eq-head { margin-bottom: 48px; }
+.eq-head h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
+.eq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.eq-card {
+  background: var(--dark);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.eq-card:hover { transform: translateY(-4px); }
+.eq-info { padding: 24px; }
+.eq-info h3 { font-size: 1.3rem; margin-bottom: 6px; }
+.eq-role {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.eq-info p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.eq-note {
+  margin-top: 24px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ── CTA SOBRE ── */
+.sobre-cta {
+  padding: 100px 0;
+  background: var(--green);
+  position: relative;
+  overflow: hidden;
+}
+.sobre-cta::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, transparent 60%);
+}
+.scta-inner {
+  position: relative; z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.scta-inner h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+.scta-inner h2 span { color: var(--accent); }
+
+/* ── RESPONSIVO SOBRE ── */
+@media (max-width: 960px) {
+  .historia-grid { grid-template-columns: 1fr; gap: 48px; }
+  .hist-img { aspect-ratio: 16/9; }
+  .valores-grid { grid-template-columns: 1fr 1fr; }
+  .dif-inner { grid-template-columns: 1fr; gap: 48px; }
+  .dif-img { display: none; }
+  .eq-grid { grid-template-columns: 1fr 1fr; }
+  .scta-inner { flex-direction: column; text-align: center; }
+}
+@media (max-width: 600px) {
+  .historia { padding: 60px 0; }
+  .valores { padding: 60px 0; }
+  .valores-grid { grid-template-columns: 1fr; }
+  .diferenciais { padding: 60px 0; }
+  .equipe { padding: 60px 0; }
+  .eq-grid { grid-template-columns: 1fr; }
+  .sobre-cta { padding: 60px 0; }
+}
