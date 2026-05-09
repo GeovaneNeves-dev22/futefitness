@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fut & Fitness — Contato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">FUT<span class="amp">&</span>FITNESS</a>
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="contato.html" class="active">Contato</a></li>
+  </ul>
+  <a href="https://wa.me/5512996716282?text=Olá!%20Quero%20agendar%20uma%20aula%20experimental%20grátis." target="_blank" class="nav-cta">Aula Grátis →</a>
+  <div class="nav-burger"><span></span><span></span><span></span></div>
+</nav>
+<div class="nav-drawer">
+  <a href="index.html">Home</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="servicos.html">Serviços</a>
+  <a href="contato.html" class="active">Contato</a>
+  <a href="https://wa.me/5512996716282" target="_blank" style="color:var(--accent)">WhatsApp →</a>
+</div>
+
+<!-- ══ PAGE HERO ══ -->
+<section class="page-hero" data-title="CONTATO">
+  <div class="container page-hero-inner">
+    <span class="section-eyebrow">Fale conosco</span>
+    <h1>Vamos<br><span>conversar?</span></h1>
+    <p>Entre em contato, agende sua aula experimental ou tire suas dúvidas. Respondemos rápido.</p>
+  </div>
+</section>
+
+<!-- ══ CONTATO PRINCIPAL ══ -->
+<section class="ct-main">
+  <div class="container">
+    <div class="ct-grid">
+
+      <!-- Info -->
+      <div class="ct-info reveal">
+        <h2>Informações<br>de <span>contato.</span></h2>
+
+        <div class="ct-item">
+          <div class="ct-icon">📍</div>
+          <div>
+            <span class="ct-label">Endereço</span>
+            <span class="ct-val">Rua Dr. Emílio Winther, 641<br>Jardim das Nações — Taubaté, SP</span>
+          </div>
+        </div>
+
+        <div class="ct-item">
+          <div class="ct-icon">📱</div>
+          <div>
+            <span class="ct-label">WhatsApp</span>
+            <a href="https://wa.me/5512996716282" target="_blank" class="ct-val ct-link">(12) 99671-6282</a>
+          </div>
+        </div>
+
+        <div class="ct-item">
+          <div class="ct-icon">⏰</div>
+          <div>
+            <span class="ct-label">Horários</span>
+            <span class="ct-val">
+              Seg–Sex: 07h às 22h<br>
+              Sábado: 07h às 12h<br>
+              <span style="color:var(--muted); font-size:0.85em">Domingo: Fechado</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="ct-item">
+          <div class="ct-icon">💳</div>
+          <div>
+            <span class="ct-label">Parcerias</span>
+            <span class="ct-val">Wellhub (Gympass) Basic+ e Gurupass</span>
+          </div>
+        </div>
+
+        <!-- Horário visual -->
+        <div class="ct-schedule">
+          <div class="cs-row">
+            <span>Segunda a Sexta</span>
+            <span class="cs-time">07:00 – 22:00</span>
+          </div>
+          <div class="cs-row">
+            <span>Sábado</span>
+            <span class="cs-time">07:00 – 12:00</span>
+          </div>
+          <div class="cs-row closed">
+            <span>Domingo</span>
+            <span class="cs-time">Fechado</span>
+          </div>
+        </div>
+
+        <a href="https://wa.me/5512996716282?text=Olá!%20Quero%20agendar%20uma%20aula%20experimental%20grátis." target="_blank" class="btn btn-accent" style="margin-top:32px; width:100%; justify-content:center;">
+          Agendar pelo WhatsApp →
+        </a>
+      </div>
+
+      <!-- Formulário -->
+      <div class="ct-form-wrap reveal">
+        <div class="ct-form-header">
+          <span class="section-eyebrow orange">Envie uma mensagem</span>
+          <h3>Ou preencha o<br>formulário abaixo.</h3>
+          <p>Responderemos pelo WhatsApp ou e-mail em até 24h.</p>
+        </div>
+        <form class="ct-form" id="contactForm">
+          <div class="cf-row">
+            <div class="cf-group">
+              <label for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="cf-group">
+              <label for="telefone">Telefone / WhatsApp *</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(12) 9 0000-0000" required>
+            </div>
+          </div>
+          <div class="cf-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+          </div>
+          <div class="cf-group">
+            <label for="interesse">Tenho interesse em</label>
+            <select id="interesse" name="interesse">
+              <option value="">Selecione um serviço...</option>
+              <option value="funcional-futebol">Treinamento Funcional com Futebol</option>
+              <option value="funcional-fitness">Treinamento Funcional Fitness</option>
+              <option value="avaliacao">Avaliação Física</option>
+              <option value="miofascial">Liberação Miofascial</option>
+              <option value="kids">Kids &amp; Base</option>
+              <option value="outros">Outros / Não sei ainda</option>
+            </select>
+          </div>
+          <div class="cf-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre seu objetivo..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent" style="width:100%; justify-content:center; font-size:1rem; padding:16px;">
+            Enviar Mensagem →
+          </button>
+          <p class="cf-note">* Ao enviar, você será redirecionado ao WhatsApp com os dados preenchidos.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ MAPA ══ -->
+<section class="ct-map">
+  <div class="container">
+    <div class="map-head reveal">
+      <span class="section-eyebrow">Localização</span>
+      <h2>Como <span>chegar.</span></h2>
+    </div>
+  </div>
+  <div class="map-embed reveal">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.8!2d-45.556!3d-23.026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRua+Dr.+Em%C3%ADlio+Winther%2C+641+-+Jardim+das+Na%C3%A7%C3%B5es%2C+Taubat%C3%A9+-+SP!5e0!3m2!1spt!2sbr!4v1"
+      width="100%"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Localização Fut e Fitness">
+    </iframe>
+    <div class="map-overlay">
+      <div class="mo-card">
+        <strong>Fut&amp;Fitness Studio</strong>
+        <span>Rua Dr. Emílio Winther, 641</span>
+        <span>Jardim das Nações — Taubaté, SP</span>
+        <a href="https://maps.google.com/?q=Rua+Dr.+Emílio+Winther+641+Taubaté+SP" target="_blank" class="btn btn-accent" style="margin-top:12px; font-size:0.8rem; padding:10px 20px;">
+          Abrir no Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">FUT<span>&</span>FITNESS</div>
+        <p>Primeiro estúdio funcional com futebol de Taubaté. Treinamento sério para quem quer resultado de verdade.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5512996716282" target="_blank">(12) 99671-6282</a></li>
+          <li><a href="#">Rua Dr. Emílio Winther, 641</a></li>
+          <li><a href="#">Jardim das Nações – Taubaté</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Fut&amp;Fitness Studio — Todos os direitos reservados.</p>
+      <a href="https://wa.me/5512996716282" target="_blank">WhatsApp →</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5512996716282" target="_blank" class="wpp-float" title="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.139.561 4.141 1.536 5.876L.057 23.852a.75.75 0 0 0 .919.919l6-1.479A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.91 0-3.7-.497-5.254-1.367L3 21.5l.876-3.732A9.956 9.956 0 0 1 2 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>
+</a>
+<script src="js/main.js"></script>
+<script>
+  // Formulário → redireciona ao WhatsApp com dados
+  document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nome      = document.getElementById('nome').value;
+    const telefone  = document.getElementById('telefone').value;
+    const email     = document.getElementById('email').value;
+    const interesse = document.getElementById('interesse').value;
+    const mensagem  = document.getElementById('mensagem').value;
+    const text = `Olá! Me chamo *${nome}*.\n📱 Telefone: ${telefone}\n📧 E-mail: ${email || 'Não informado'}\n🎯 Interesse: ${interesse || 'Não especificado'}\n💬 ${mensagem || 'Gostaria de saber mais sobre os serviços.'}`;
+    window.open(`https://wa.me/5512996716282?text=${encodeURIComponent(text)}`, '_blank');
+  });
+</script>
+</body>
+</html>
